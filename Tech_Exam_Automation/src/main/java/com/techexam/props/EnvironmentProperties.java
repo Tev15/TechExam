@@ -4,7 +4,7 @@ import java.io.IOException;
 import java.text.MessageFormat;
 import java.util.Properties;
 
-public class EnvironmentProperties {
+public final class EnvironmentProperties {
 	private final Properties props;
 	
 	private EnvironmentProperties() {
