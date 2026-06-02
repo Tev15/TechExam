@@ -192,28 +192,28 @@ mvn clean test -Dtest=LoginTest
 
 ## 6. Test Cases
 
-| ID    | Class           | Description                                        | Group            |
-|-------|-----------------|----------------------------------------------------|------------------|
-| TC001 | LoginTest       | Valid login with correct credentials               | smoke, auth      |
-| TC002 | LoginTest       | Invalid login — wrong password                     | regression, neg  |
-| TC003 | LoginTest       | Invalid login — wrong username                     | regression, neg  |
-| TC004 | LoginTest       | Login with empty username and password             | regression, neg  |
-| TC005 | LoginTest       | Login with empty username only                     | regression, neg  |
-| TC006 | LoginTest       | Login with empty password only                     | regression, neg  |
-| TC007 | LoginTest       | Successful logout                                  | smoke, auth      |
-| TC008 | NavigationTest  | Home page loads after login                        | smoke, navigation|
-| TC009 | NavigationTest  | Navigate to secondary page via nav link            | regression       |
-| TC010 | NavigationTest  | Browser back button restores previous page         | regression       |
-| TC011 | FormTest        | Text Input Retains Value                           | form             |
-| TC012 | FormTest        | Invalid URL Returns Error Page                     | error handling   |
-| EC001 | EdgeCaseTest    | Whitespace-only Username                           | regression, form |
-| EC002 | EdgeCaseTest    | Whitespace-only Password                           | regression, neg  |
-| EC003 | EdgeCaseTest    | Case sensitivity of Username                       | regression, neg  |
-| EC004 | EdgeCaseTest    | Oversized username (500 chars)                     | regression       |
-| EC005 | EdgeCaseTest    | Oversized password (1000 chars)                    | regression       |
-| EC006 | EdgeCaseTest    | Leading and trailing spaces around valid username. | regression, form |
-| EC007 | EdgeCaseTest    | Leading and trailing values around valid username  | errorhandling    |
-| EC008 | EdgeCaseTest    | Back button after logout                           | stability        |
+| ID    | Class           | Description                                        | Group                |
+|-------|-----------------|----------------------------------------------------|----------------------|
+| TC001 | LoginTest       | Valid login with correct credentials               | smoke, auth          |
+| TC002 | LoginTest       | Invalid login — wrong password                     | regression, neg      |
+| TC003 | LoginTest       | Invalid login — wrong username                     | regression, neg      |
+| TC004 | LoginTest       | Login with empty username and password             | regression, neg      |
+| TC005 | LoginTest       | Login with empty username only                     | regression, neg      |
+| TC006 | LoginTest       | Login with empty password only                     | regression, neg      |
+| TC007 | LoginTest       | Successful logout                                  | smoke, auth          |
+| TC008 | NavigationTest  | Home page loads after login                        | smoke, navigation    |
+| TC009 | NavigationTest  | Navigate to secondary page via nav link            | regression           |
+| TC010 | NavigationTest  | Browser back button restores previous page         | regression           |
+| TC011 | FormTest        | Text Input Retains Value                           | form                 |
+| TC012 | FormTest        | Invalid URL Returns Error Page                     | error handling       |
+| EC001 | EdgeCaseTest    | Whitespace-only Username                           | edge, input-boundary |
+| EC002 | EdgeCaseTest    | Whitespace-only Password                           | edge, input-boundary |
+| EC003 | EdgeCaseTest    | Case sensitivity of Username                       | edge, input-boundary |
+| EC004 | EdgeCaseTest    | Oversized username (500 chars)                     | edge, input-boundary |
+| EC005 | EdgeCaseTest    | Oversized password (1000 chars)                    | edge, input-boundary |
+| EC006 | EdgeCaseTest    | Leading and trailing spaces around valid username. | edge, input-boundary |
+| EC007 | EdgeCaseTest    | Leading and trailing values around valid username  | edge, input-boundary |
+| EC008 | EdgeCaseTest    | Back button after logout                           | edge, session        |
 
 ---
 
