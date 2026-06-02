@@ -186,6 +186,7 @@ public class LoginTest extends BaseTest {
 		if (is500) {
 			logger.error("HTTP 500 encountered");
 			ExtentReportManager.getTest().log(Status.WARNING," WARNING: HTTP 500 triggered. ");
+			ExtentReportManager.getTest().log(Status.FAIL,"Existing Bug: BUG-001: HTTP Internal Error 500 Occurs when logging in with Empty Username.");
 		} else {
 			Assert.assertTrue(loginPage.isLoginPageDisplayed(), "TC005 FAIL: Login page not visible. Current URL: "  + currentUrl());
 			logger.info("{}: No 500 error. URL: {}");

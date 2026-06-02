@@ -161,6 +161,7 @@ public class EdgeCaseTest extends BaseTest {
 			logger.warn("EC006: Server TRIMS username. Document this behaviour.");
 			ExtentReportManager.getTest()
 					.warning("EC006 NOTE: Server trims whitespace. Login with padded username succeeded.");
+			ExtentReportManager.getTest().log(Status.FAIL,"Existing Bug: BUG-002: Username Inputs with Leading and Trailing Values can login successfully.");
 		} else if (errorShown) {
 			logger.info("EC006: Server is case-strict. Padded username was rejected.");
 			ExtentReportManager.getTest().log(Status.INFO,
@@ -205,6 +206,7 @@ public class EdgeCaseTest extends BaseTest {
 						"EC007 FAIL: Login with padded username succeeded.");
 				ExtentReportManager.getTest().warning(
 						"EC007 WARNING: Server acknowledges if it contains valid username.");
+				ExtentReportManager.getTest().log(Status.FAIL,"Existing Bug: BUG-002: Username Inputs with Leading and Trailing Values can login successfully.");
 			} else if (errorShown) {
 				logger.info("EC007 INFO: Server is strict. Padded username was rejected.");
 				ExtentReportManager.getTest().log(Status.INFO,
