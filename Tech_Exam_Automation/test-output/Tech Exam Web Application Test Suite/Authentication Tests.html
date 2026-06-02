@@ -1,0 +1,115 @@
+<html>
+<head>
+<title>TestNG:  Authentication Tests</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Authentication Tests</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>7/0/0</td>
+</tr><tr>
+<td>Started on:</td><td>Tue Jun 02 13:37:49 CST 2026</td>
+</tr>
+<tr><td>Total time:</td><td>20 seconds (20151 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td>auth </td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.techexam.webdriver.tests.LoginTest.TC002_wrongPassword()'><b>TC002_wrongPassword</b><br>Test class: com.techexam.webdriver.tests.LoginTest<br>Test method: TC002: Verify that login fails with a correct username but wrong password.</td>
+<td></td>
+<td>0</td>
+<td>com.techexam.webdriver.tests.LoginTest@68044f4</td></tr>
+<tr>
+<td title='com.techexam.webdriver.tests.LoginTest.TC006_emptyPassword()'><b>TC006_emptyPassword</b><br>Test class: com.techexam.webdriver.tests.LoginTest<br>Test method: TC006: Verify that login fails when only the username is provided.</td>
+<td></td>
+<td>1</td>
+<td>com.techexam.webdriver.tests.LoginTest@68044f4</td></tr>
+<tr>
+<td title='com.techexam.webdriver.tests.LoginTest.TC003_wrongUsername()'><b>TC003_wrongUsername</b><br>Test class: com.techexam.webdriver.tests.LoginTest<br>Test method: TC003: Verify that login fails with a non-existent username.</td>
+<td></td>
+<td>1</td>
+<td>com.techexam.webdriver.tests.LoginTest@68044f4</td></tr>
+<tr>
+<td title='com.techexam.webdriver.tests.LoginTest.TC007_logout()'><b>TC007_logout</b><br>Test class: com.techexam.webdriver.tests.LoginTest<br>Test method: TC007: Verify that a logged-in user can log out and is redirected to the login page.</td>
+<td></td>
+<td>1</td>
+<td>com.techexam.webdriver.tests.LoginTest@68044f4</td></tr>
+<tr>
+<td title='com.techexam.webdriver.tests.LoginTest.TC001_validLogin()'><b>TC001_validLogin</b><br>Test class: com.techexam.webdriver.tests.LoginTest<br>Test method: TC001: Verify that a user with valid credentials can log in successfully.</td>
+<td></td>
+<td>1</td>
+<td>com.techexam.webdriver.tests.LoginTest@68044f4</td></tr>
+<tr>
+<td title='com.techexam.webdriver.tests.LoginTest.TC005_emptyUsername()'><b>TC005_emptyUsername</b><br>Test class: com.techexam.webdriver.tests.LoginTest<br>Test method: TC005: Verify that Internal Error occurs when only the password is provided.</td>
+<td></td>
+<td>0</td>
+<td>com.techexam.webdriver.tests.LoginTest@68044f4</td></tr>
+<tr>
+<td title='com.techexam.webdriver.tests.LoginTest.TC004_emptyCredentials()'><b>TC004_emptyCredentials</b><br>Test class: com.techexam.webdriver.tests.LoginTest<br>Test method: TC004: Verify that  login fails with both fields empty is blocked.</td>
+<td></td>
+<td>0</td>
+<td>com.techexam.webdriver.tests.LoginTest@68044f4</td></tr>
+</table><p>
+</body>
+</html>

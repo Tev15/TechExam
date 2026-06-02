@@ -41,15 +41,6 @@ public class BasePage {
 	}
 
 	/**
-	 * Returns the displayed text of a {@link WebElement} when it is visible
-	 * 
-	 * @param webElement {@link WebElement} to get displayed text
-	 */
-	protected String getText(WebElement element) {
-		return wait.until(ExpectedConditions.visibilityOf(element)).getText();
-	}
-
-	/**
 	 * Provides text input to a {@link WebElement}, preferably text fields.
 	 * 
 	 * @param webElement {@link WebElement} to put text into

@@ -1,0 +1,714 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="23" passed="23" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2026-06-02T13:37:40 CST" name="Tech Exam Web Application Test Suite" finished-at="2026-06-02T13:41:50 CST" duration-ms="249937">
+    <groups>
+      <group name="input-boundary">
+        <method signature="EdgeCaseTest.EC001_whitespaceOnlyUsername()[pri:31, instance:com.techexam.webdriver.tests.EdgeCaseTest@736d6a5c]" name="EC001_whitespaceOnlyUsername" class="com.techexam.webdriver.tests.EdgeCaseTest"/>
+        <method signature="EdgeCaseTest.EC002_whitespaceOnlyPassword()[pri:32, instance:com.techexam.webdriver.tests.EdgeCaseTest@736d6a5c]" name="EC002_whitespaceOnlyPassword" class="com.techexam.webdriver.tests.EdgeCaseTest"/>
+        <method signature="EdgeCaseTest.EC003_caseSensitivityUsername()[pri:33, instance:com.techexam.webdriver.tests.EdgeCaseTest@736d6a5c]" name="EC003_caseSensitivityUsername" class="com.techexam.webdriver.tests.EdgeCaseTest"/>
+        <method signature="EdgeCaseTest.EC004_maxLengthUsername()[pri:34, instance:com.techexam.webdriver.tests.EdgeCaseTest@736d6a5c]" name="EC004_maxLengthUsername" class="com.techexam.webdriver.tests.EdgeCaseTest"/>
+        <method signature="EdgeCaseTest.EC005_maxLengthPassword()[pri:35, instance:com.techexam.webdriver.tests.EdgeCaseTest@736d6a5c]" name="EC005_maxLengthPassword" class="com.techexam.webdriver.tests.EdgeCaseTest"/>
+        <method signature="EdgeCaseTest.EC006_leadingTrailingSpacesInUsername()[pri:36, instance:com.techexam.webdriver.tests.EdgeCaseTest@736d6a5c]" name="EC006_leadingTrailingSpacesInUsername" class="com.techexam.webdriver.tests.EdgeCaseTest"/>
+        <method signature="EdgeCaseTest.EC007_leadingTrailingValuesInUsername()[pri:37, instance:com.techexam.webdriver.tests.EdgeCaseTest@736d6a5c]" name="EC007_leadingTrailingValuesInUsername" class="com.techexam.webdriver.tests.EdgeCaseTest"/>
+      </group> <!-- input-boundary -->
+      <group name="edge">
+        <method signature="EdgeCaseTest.EC001_whitespaceOnlyUsername()[pri:31, instance:com.techexam.webdriver.tests.EdgeCaseTest@736d6a5c]" name="EC001_whitespaceOnlyUsername" class="com.techexam.webdriver.tests.EdgeCaseTest"/>
+        <method signature="EdgeCaseTest.EC002_whitespaceOnlyPassword()[pri:32, instance:com.techexam.webdriver.tests.EdgeCaseTest@736d6a5c]" name="EC002_whitespaceOnlyPassword" class="com.techexam.webdriver.tests.EdgeCaseTest"/>
+        <method signature="EdgeCaseTest.EC003_caseSensitivityUsername()[pri:33, instance:com.techexam.webdriver.tests.EdgeCaseTest@736d6a5c]" name="EC003_caseSensitivityUsername" class="com.techexam.webdriver.tests.EdgeCaseTest"/>
+        <method signature="EdgeCaseTest.EC004_maxLengthUsername()[pri:34, instance:com.techexam.webdriver.tests.EdgeCaseTest@736d6a5c]" name="EC004_maxLengthUsername" class="com.techexam.webdriver.tests.EdgeCaseTest"/>
+        <method signature="EdgeCaseTest.EC005_maxLengthPassword()[pri:35, instance:com.techexam.webdriver.tests.EdgeCaseTest@736d6a5c]" name="EC005_maxLengthPassword" class="com.techexam.webdriver.tests.EdgeCaseTest"/>
+        <method signature="EdgeCaseTest.EC006_leadingTrailingSpacesInUsername()[pri:36, instance:com.techexam.webdriver.tests.EdgeCaseTest@736d6a5c]" name="EC006_leadingTrailingSpacesInUsername" class="com.techexam.webdriver.tests.EdgeCaseTest"/>
+        <method signature="EdgeCaseTest.EC007_leadingTrailingValuesInUsername()[pri:37, instance:com.techexam.webdriver.tests.EdgeCaseTest@736d6a5c]" name="EC007_leadingTrailingValuesInUsername" class="com.techexam.webdriver.tests.EdgeCaseTest"/>
+        <method signature="EdgeCaseTest.EC008_backButtonAfterLogout()[pri:38, instance:com.techexam.webdriver.tests.EdgeCaseTest@736d6a5c]" name="EC008_backButtonAfterLogout" class="com.techexam.webdriver.tests.EdgeCaseTest"/>
+      </group> <!-- edge -->
+      <group name="negative">
+        <method signature="LoginTest.TC002_wrongPassword()[pri:2, instance:com.techexam.webdriver.tests.LoginTest@68044f4]" name="TC002_wrongPassword" class="com.techexam.webdriver.tests.LoginTest"/>
+        <method signature="LoginTest.TC003_wrongUsername()[pri:3, instance:com.techexam.webdriver.tests.LoginTest@68044f4]" name="TC003_wrongUsername" class="com.techexam.webdriver.tests.LoginTest"/>
+        <method signature="LoginTest.TC004_emptyCredentials()[pri:4, instance:com.techexam.webdriver.tests.LoginTest@68044f4]" name="TC004_emptyCredentials" class="com.techexam.webdriver.tests.LoginTest"/>
+        <method signature="LoginTest.TC005_emptyUsername()[pri:5, instance:com.techexam.webdriver.tests.LoginTest@68044f4]" name="TC005_emptyUsername" class="com.techexam.webdriver.tests.LoginTest"/>
+        <method signature="LoginTest.TC006_emptyPassword()[pri:6, instance:com.techexam.webdriver.tests.LoginTest@68044f4]" name="TC006_emptyPassword" class="com.techexam.webdriver.tests.LoginTest"/>
+      </group> <!-- negative -->
+      <group name="navigation">
+        <method signature="NavigationTest.TC008_homePageLoadsAfterLogin()[pri:8, instance:com.techexam.webdriver.tests.NavigationTest@4566d049]" name="TC008_homePageLoadsAfterLogin" class="com.techexam.webdriver.tests.NavigationTest"/>
+        <method signature="NavigationTest.TC008_homePageLoadsAfterLogin()[pri:8, instance:com.techexam.webdriver.tests.NavigationTest@315f43d5]" name="TC008_homePageLoadsAfterLogin" class="com.techexam.webdriver.tests.NavigationTest"/>
+        <method signature="NavigationTest.TC009_directUrlToLoginWhileLoggedIn()[pri:9, instance:com.techexam.webdriver.tests.NavigationTest@315f43d5]" name="TC009_directUrlToLoginWhileLoggedIn" class="com.techexam.webdriver.tests.NavigationTest"/>
+        <method signature="NavigationTest.TC010_pageTitlesAreNotBlank()[pri:10, instance:com.techexam.webdriver.tests.NavigationTest@315f43d5]" name="TC010_pageTitlesAreNotBlank" class="com.techexam.webdriver.tests.NavigationTest"/>
+      </group> <!-- navigation -->
+      <group name="form">
+        <method signature="FormTest.TC011_userIdInputRetainsValue()[pri:11, instance:com.techexam.webdriver.tests.FormTest@78365cfa]" name="TC011_userIdInputRetainsValue" class="com.techexam.webdriver.tests.FormTest"/>
+      </group> <!-- form -->
+      <group name="auth">
+        <method signature="LoginTest.TC001_validLogin()[pri:1, instance:com.techexam.webdriver.tests.LoginTest@4218500f]" name="TC001_validLogin" class="com.techexam.webdriver.tests.LoginTest"/>
+        <method signature="LoginTest.TC007_logout()[pri:7, instance:com.techexam.webdriver.tests.LoginTest@4218500f]" name="TC007_logout" class="com.techexam.webdriver.tests.LoginTest"/>
+        <method signature="LoginTest.TC001_validLogin()[pri:1, instance:com.techexam.webdriver.tests.LoginTest@68044f4]" name="TC001_validLogin" class="com.techexam.webdriver.tests.LoginTest"/>
+        <method signature="LoginTest.TC002_wrongPassword()[pri:2, instance:com.techexam.webdriver.tests.LoginTest@68044f4]" name="TC002_wrongPassword" class="com.techexam.webdriver.tests.LoginTest"/>
+        <method signature="LoginTest.TC003_wrongUsername()[pri:3, instance:com.techexam.webdriver.tests.LoginTest@68044f4]" name="TC003_wrongUsername" class="com.techexam.webdriver.tests.LoginTest"/>
+        <method signature="LoginTest.TC004_emptyCredentials()[pri:4, instance:com.techexam.webdriver.tests.LoginTest@68044f4]" name="TC004_emptyCredentials" class="com.techexam.webdriver.tests.LoginTest"/>
+        <method signature="LoginTest.TC005_emptyUsername()[pri:5, instance:com.techexam.webdriver.tests.LoginTest@68044f4]" name="TC005_emptyUsername" class="com.techexam.webdriver.tests.LoginTest"/>
+        <method signature="LoginTest.TC006_emptyPassword()[pri:6, instance:com.techexam.webdriver.tests.LoginTest@68044f4]" name="TC006_emptyPassword" class="com.techexam.webdriver.tests.LoginTest"/>
+        <method signature="LoginTest.TC007_logout()[pri:7, instance:com.techexam.webdriver.tests.LoginTest@68044f4]" name="TC007_logout" class="com.techexam.webdriver.tests.LoginTest"/>
+      </group> <!-- auth -->
+      <group name="session">
+        <method signature="EdgeCaseTest.EC008_backButtonAfterLogout()[pri:38, instance:com.techexam.webdriver.tests.EdgeCaseTest@736d6a5c]" name="EC008_backButtonAfterLogout" class="com.techexam.webdriver.tests.EdgeCaseTest"/>
+      </group> <!-- session -->
+      <group name="regression">
+        <method signature="LoginTest.TC001_validLogin()[pri:1, instance:com.techexam.webdriver.tests.LoginTest@4218500f]" name="TC001_validLogin" class="com.techexam.webdriver.tests.LoginTest"/>
+        <method signature="LoginTest.TC007_logout()[pri:7, instance:com.techexam.webdriver.tests.LoginTest@4218500f]" name="TC007_logout" class="com.techexam.webdriver.tests.LoginTest"/>
+        <method signature="NavigationTest.TC008_homePageLoadsAfterLogin()[pri:8, instance:com.techexam.webdriver.tests.NavigationTest@4566d049]" name="TC008_homePageLoadsAfterLogin" class="com.techexam.webdriver.tests.NavigationTest"/>
+        <method signature="LoginTest.TC001_validLogin()[pri:1, instance:com.techexam.webdriver.tests.LoginTest@68044f4]" name="TC001_validLogin" class="com.techexam.webdriver.tests.LoginTest"/>
+        <method signature="LoginTest.TC002_wrongPassword()[pri:2, instance:com.techexam.webdriver.tests.LoginTest@68044f4]" name="TC002_wrongPassword" class="com.techexam.webdriver.tests.LoginTest"/>
+        <method signature="LoginTest.TC003_wrongUsername()[pri:3, instance:com.techexam.webdriver.tests.LoginTest@68044f4]" name="TC003_wrongUsername" class="com.techexam.webdriver.tests.LoginTest"/>
+        <method signature="LoginTest.TC004_emptyCredentials()[pri:4, instance:com.techexam.webdriver.tests.LoginTest@68044f4]" name="TC004_emptyCredentials" class="com.techexam.webdriver.tests.LoginTest"/>
+        <method signature="LoginTest.TC005_emptyUsername()[pri:5, instance:com.techexam.webdriver.tests.LoginTest@68044f4]" name="TC005_emptyUsername" class="com.techexam.webdriver.tests.LoginTest"/>
+        <method signature="LoginTest.TC006_emptyPassword()[pri:6, instance:com.techexam.webdriver.tests.LoginTest@68044f4]" name="TC006_emptyPassword" class="com.techexam.webdriver.tests.LoginTest"/>
+        <method signature="LoginTest.TC007_logout()[pri:7, instance:com.techexam.webdriver.tests.LoginTest@68044f4]" name="TC007_logout" class="com.techexam.webdriver.tests.LoginTest"/>
+        <method signature="NavigationTest.TC008_homePageLoadsAfterLogin()[pri:8, instance:com.techexam.webdriver.tests.NavigationTest@315f43d5]" name="TC008_homePageLoadsAfterLogin" class="com.techexam.webdriver.tests.NavigationTest"/>
+        <method signature="NavigationTest.TC009_directUrlToLoginWhileLoggedIn()[pri:9, instance:com.techexam.webdriver.tests.NavigationTest@315f43d5]" name="TC009_directUrlToLoginWhileLoggedIn" class="com.techexam.webdriver.tests.NavigationTest"/>
+        <method signature="NavigationTest.TC010_pageTitlesAreNotBlank()[pri:10, instance:com.techexam.webdriver.tests.NavigationTest@315f43d5]" name="TC010_pageTitlesAreNotBlank" class="com.techexam.webdriver.tests.NavigationTest"/>
+        <method signature="FormTest.TC011_userIdInputRetainsValue()[pri:11, instance:com.techexam.webdriver.tests.FormTest@78365cfa]" name="TC011_userIdInputRetainsValue" class="com.techexam.webdriver.tests.FormTest"/>
+        <method signature="FormTest.TC012_invalidUrl()[pri:12, instance:com.techexam.webdriver.tests.FormTest@78365cfa]" name="TC012_invalidUrl" class="com.techexam.webdriver.tests.FormTest"/>
+      </group> <!-- regression -->
+      <group name="errorhandling">
+        <method signature="FormTest.TC012_invalidUrl()[pri:12, instance:com.techexam.webdriver.tests.FormTest@78365cfa]" name="TC012_invalidUrl" class="com.techexam.webdriver.tests.FormTest"/>
+      </group> <!-- errorhandling -->
+      <group name="smoke">
+        <method signature="LoginTest.TC001_validLogin()[pri:1, instance:com.techexam.webdriver.tests.LoginTest@4218500f]" name="TC001_validLogin" class="com.techexam.webdriver.tests.LoginTest"/>
+        <method signature="LoginTest.TC007_logout()[pri:7, instance:com.techexam.webdriver.tests.LoginTest@4218500f]" name="TC007_logout" class="com.techexam.webdriver.tests.LoginTest"/>
+        <method signature="NavigationTest.TC008_homePageLoadsAfterLogin()[pri:8, instance:com.techexam.webdriver.tests.NavigationTest@4566d049]" name="TC008_homePageLoadsAfterLogin" class="com.techexam.webdriver.tests.NavigationTest"/>
+        <method signature="LoginTest.TC001_validLogin()[pri:1, instance:com.techexam.webdriver.tests.LoginTest@68044f4]" name="TC001_validLogin" class="com.techexam.webdriver.tests.LoginTest"/>
+        <method signature="LoginTest.TC007_logout()[pri:7, instance:com.techexam.webdriver.tests.LoginTest@68044f4]" name="TC007_logout" class="com.techexam.webdriver.tests.LoginTest"/>
+        <method signature="NavigationTest.TC008_homePageLoadsAfterLogin()[pri:8, instance:com.techexam.webdriver.tests.NavigationTest@315f43d5]" name="TC008_homePageLoadsAfterLogin" class="com.techexam.webdriver.tests.NavigationTest"/>
+      </group> <!-- smoke -->
+    </groups>
+    <test started-at="2026-06-02T13:37:40 CST" name="Smoke Tests" finished-at="2026-06-02T13:37:49 CST" duration-ms="9148">
+      <class name="com.techexam.webdriver.tests.LoginTest">
+        <test-method is-config="true" signature="setUp(java.lang.reflect.Method)[pri:0, instance:com.techexam.webdriver.tests.LoginTest@4218500f]" started-at="2026-06-02T13:37:40 CST" name="setUp" finished-at="2026-06-02T13:37:42 CST" duration-ms="2162" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.techexam.webdriver.tests.LoginTest.TC001_validLogin()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="TC001_validLogin()[pri:1, instance:com.techexam.webdriver.tests.LoginTest@4218500f]" started-at="2026-06-02T13:37:42 CST" name="TC001_validLogin" description="TC001: Verify that a user with valid credentials can log in successfully." finished-at="2026-06-02T13:37:43 CST" duration-ms="1092" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC001_validLogin -->
+        <test-method is-config="true" signature="tearDown(java.lang.reflect.Method)[pri:0, instance:com.techexam.webdriver.tests.LoginTest@4218500f]" started-at="2026-06-02T13:37:43 CST" name="tearDown" finished-at="2026-06-02T13:37:43 CST" duration-ms="187" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.techexam.webdriver.tests.LoginTest.TC001_validLogin()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp(java.lang.reflect.Method)[pri:0, instance:com.techexam.webdriver.tests.LoginTest@4218500f]" started-at="2026-06-02T13:37:43 CST" name="setUp" finished-at="2026-06-02T13:37:45 CST" duration-ms="1462" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.techexam.webdriver.tests.LoginTest.TC007_logout()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="TC007_logout()[pri:7, instance:com.techexam.webdriver.tests.LoginTest@4218500f]" started-at="2026-06-02T13:37:45 CST" name="TC007_logout" description="TC007: Verify that a logged-in user can log out and is redirected to the login page." finished-at="2026-06-02T13:37:47 CST" duration-ms="1609" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC007_logout -->
+        <test-method is-config="true" signature="tearDown(java.lang.reflect.Method)[pri:0, instance:com.techexam.webdriver.tests.LoginTest@4218500f]" started-at="2026-06-02T13:37:47 CST" name="tearDown" finished-at="2026-06-02T13:37:47 CST" duration-ms="145" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.techexam.webdriver.tests.LoginTest.TC007_logout()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.techexam.webdriver.tests.LoginTest -->
+      <class name="com.techexam.webdriver.tests.NavigationTest">
+        <test-method is-config="true" signature="setUp(java.lang.reflect.Method)[pri:0, instance:com.techexam.webdriver.tests.NavigationTest@4566d049]" started-at="2026-06-02T13:37:47 CST" name="setUp" finished-at="2026-06-02T13:37:48 CST" duration-ms="1362" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.techexam.webdriver.tests.NavigationTest.TC008_homePageLoadsAfterLogin()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="TC008_homePageLoadsAfterLogin()[pri:8, instance:com.techexam.webdriver.tests.NavigationTest@4566d049]" started-at="2026-06-02T13:37:48 CST" name="TC008_homePageLoadsAfterLogin" description="TC008: Verify the home/dashboard page loads and is not blank after login." finished-at="2026-06-02T13:37:49 CST" duration-ms="816" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC008_homePageLoadsAfterLogin -->
+        <test-method is-config="true" signature="tearDown(java.lang.reflect.Method)[pri:0, instance:com.techexam.webdriver.tests.NavigationTest@4566d049]" started-at="2026-06-02T13:37:49 CST" name="tearDown" finished-at="2026-06-02T13:37:49 CST" duration-ms="136" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.techexam.webdriver.tests.NavigationTest.TC008_homePageLoadsAfterLogin()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.techexam.webdriver.tests.NavigationTest -->
+    </test> <!-- Smoke Tests -->
+    <test started-at="2026-06-02T13:37:49 CST" name="Authentication Tests" finished-at="2026-06-02T13:38:09 CST" duration-ms="20151">
+      <class name="com.techexam.webdriver.tests.LoginTest">
+        <test-method is-config="true" signature="setUp(java.lang.reflect.Method)[pri:0, instance:com.techexam.webdriver.tests.LoginTest@68044f4]" started-at="2026-06-02T13:37:49 CST" name="setUp" finished-at="2026-06-02T13:37:51 CST" duration-ms="1508" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.techexam.webdriver.tests.LoginTest.TC001_validLogin()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="TC001_validLogin()[pri:1, instance:com.techexam.webdriver.tests.LoginTest@68044f4]" started-at="2026-06-02T13:37:51 CST" name="TC001_validLogin" description="TC001: Verify that a user with valid credentials can log in successfully." finished-at="2026-06-02T13:37:52 CST" duration-ms="1016" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC001_validLogin -->
+        <test-method is-config="true" signature="tearDown(java.lang.reflect.Method)[pri:0, instance:com.techexam.webdriver.tests.LoginTest@68044f4]" started-at="2026-06-02T13:37:52 CST" name="tearDown" finished-at="2026-06-02T13:37:52 CST" duration-ms="207" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.techexam.webdriver.tests.LoginTest.TC001_validLogin()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp(java.lang.reflect.Method)[pri:0, instance:com.techexam.webdriver.tests.LoginTest@68044f4]" started-at="2026-06-02T13:37:52 CST" name="setUp" finished-at="2026-06-02T13:37:54 CST" duration-ms="1578" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.techexam.webdriver.tests.LoginTest.TC002_wrongPassword()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="TC002_wrongPassword()[pri:2, instance:com.techexam.webdriver.tests.LoginTest@68044f4]" started-at="2026-06-02T13:37:54 CST" name="TC002_wrongPassword" description="TC002: Verify that login fails with a correct username but wrong password." finished-at="2026-06-02T13:37:55 CST" duration-ms="898" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC002_wrongPassword -->
+        <test-method is-config="true" signature="tearDown(java.lang.reflect.Method)[pri:0, instance:com.techexam.webdriver.tests.LoginTest@68044f4]" started-at="2026-06-02T13:37:55 CST" name="tearDown" finished-at="2026-06-02T13:37:55 CST" duration-ms="185" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.techexam.webdriver.tests.LoginTest.TC002_wrongPassword()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp(java.lang.reflect.Method)[pri:0, instance:com.techexam.webdriver.tests.LoginTest@68044f4]" started-at="2026-06-02T13:37:55 CST" name="setUp" finished-at="2026-06-02T13:37:58 CST" duration-ms="2959" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.techexam.webdriver.tests.LoginTest.TC003_wrongUsername()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="TC003_wrongUsername()[pri:3, instance:com.techexam.webdriver.tests.LoginTest@68044f4]" started-at="2026-06-02T13:37:58 CST" name="TC003_wrongUsername" description="TC003: Verify that login fails with a non-existent username." finished-at="2026-06-02T13:37:59 CST" duration-ms="1300" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC003_wrongUsername -->
+        <test-method is-config="true" signature="tearDown(java.lang.reflect.Method)[pri:0, instance:com.techexam.webdriver.tests.LoginTest@68044f4]" started-at="2026-06-02T13:37:59 CST" name="tearDown" finished-at="2026-06-02T13:37:59 CST" duration-ms="171" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.techexam.webdriver.tests.LoginTest.TC003_wrongUsername()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp(java.lang.reflect.Method)[pri:0, instance:com.techexam.webdriver.tests.LoginTest@68044f4]" started-at="2026-06-02T13:37:59 CST" name="setUp" finished-at="2026-06-02T13:38:01 CST" duration-ms="1502" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.techexam.webdriver.tests.LoginTest.TC004_emptyCredentials()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="TC004_emptyCredentials()[pri:4, instance:com.techexam.webdriver.tests.LoginTest@68044f4]" started-at="2026-06-02T13:38:01 CST" name="TC004_emptyCredentials" description="TC004: Verify that  login fails with both fields empty is blocked." finished-at="2026-06-02T13:38:01 CST" duration-ms="748" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC004_emptyCredentials -->
+        <test-method is-config="true" signature="tearDown(java.lang.reflect.Method)[pri:0, instance:com.techexam.webdriver.tests.LoginTest@68044f4]" started-at="2026-06-02T13:38:01 CST" name="tearDown" finished-at="2026-06-02T13:38:02 CST" duration-ms="159" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.techexam.webdriver.tests.LoginTest.TC004_emptyCredentials()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp(java.lang.reflect.Method)[pri:0, instance:com.techexam.webdriver.tests.LoginTest@68044f4]" started-at="2026-06-02T13:38:02 CST" name="setUp" finished-at="2026-06-02T13:38:03 CST" duration-ms="1261" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.techexam.webdriver.tests.LoginTest.TC005_emptyUsername()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="TC005_emptyUsername()[pri:5, instance:com.techexam.webdriver.tests.LoginTest@68044f4]" started-at="2026-06-02T13:38:03 CST" name="TC005_emptyUsername" description="TC005: Verify that Internal Error occurs when only the password is provided." finished-at="2026-06-02T13:38:04 CST" duration-ms="746" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC005_emptyUsername -->
+        <test-method is-config="true" signature="tearDown(java.lang.reflect.Method)[pri:0, instance:com.techexam.webdriver.tests.LoginTest@68044f4]" started-at="2026-06-02T13:38:04 CST" name="tearDown" finished-at="2026-06-02T13:38:04 CST" duration-ms="153" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.techexam.webdriver.tests.LoginTest.TC005_emptyUsername()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp(java.lang.reflect.Method)[pri:0, instance:com.techexam.webdriver.tests.LoginTest@68044f4]" started-at="2026-06-02T13:38:04 CST" name="setUp" finished-at="2026-06-02T13:38:05 CST" duration-ms="1366" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.techexam.webdriver.tests.LoginTest.TC006_emptyPassword()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="TC006_emptyPassword()[pri:6, instance:com.techexam.webdriver.tests.LoginTest@68044f4]" started-at="2026-06-02T13:38:05 CST" name="TC006_emptyPassword" description="TC006: Verify that login fails when only the username is provided." finished-at="2026-06-02T13:38:06 CST" duration-ms="1016" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC006_emptyPassword -->
+        <test-method is-config="true" signature="tearDown(java.lang.reflect.Method)[pri:0, instance:com.techexam.webdriver.tests.LoginTest@68044f4]" started-at="2026-06-02T13:38:06 CST" name="tearDown" finished-at="2026-06-02T13:38:06 CST" duration-ms="139" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.techexam.webdriver.tests.LoginTest.TC006_emptyPassword()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp(java.lang.reflect.Method)[pri:0, instance:com.techexam.webdriver.tests.LoginTest@68044f4]" started-at="2026-06-02T13:38:06 CST" name="setUp" finished-at="2026-06-02T13:38:08 CST" duration-ms="1526" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.techexam.webdriver.tests.LoginTest.TC007_logout()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="TC007_logout()[pri:7, instance:com.techexam.webdriver.tests.LoginTest@68044f4]" started-at="2026-06-02T13:38:08 CST" name="TC007_logout" description="TC007: Verify that a logged-in user can log out and is redirected to the login page." finished-at="2026-06-02T13:38:09 CST" duration-ms="1541" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC007_logout -->
+        <test-method is-config="true" signature="tearDown(java.lang.reflect.Method)[pri:0, instance:com.techexam.webdriver.tests.LoginTest@68044f4]" started-at="2026-06-02T13:38:09 CST" name="tearDown" finished-at="2026-06-02T13:38:09 CST" duration-ms="135" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.techexam.webdriver.tests.LoginTest.TC007_logout()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.techexam.webdriver.tests.LoginTest -->
+    </test> <!-- Authentication Tests -->
+    <test started-at="2026-06-02T13:38:10 CST" name="Navigation Tests" finished-at="2026-06-02T13:38:19 CST" duration-ms="9414">
+      <class name="com.techexam.webdriver.tests.NavigationTest">
+        <test-method is-config="true" signature="setUp(java.lang.reflect.Method)[pri:0, instance:com.techexam.webdriver.tests.NavigationTest@315f43d5]" started-at="2026-06-02T13:38:10 CST" name="setUp" finished-at="2026-06-02T13:38:11 CST" duration-ms="1491" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.techexam.webdriver.tests.NavigationTest.TC008_homePageLoadsAfterLogin()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="TC008_homePageLoadsAfterLogin()[pri:8, instance:com.techexam.webdriver.tests.NavigationTest@315f43d5]" started-at="2026-06-02T13:38:11 CST" name="TC008_homePageLoadsAfterLogin" description="TC008: Verify the home/dashboard page loads and is not blank after login." finished-at="2026-06-02T13:38:12 CST" duration-ms="998" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC008_homePageLoadsAfterLogin -->
+        <test-method is-config="true" signature="tearDown(java.lang.reflect.Method)[pri:0, instance:com.techexam.webdriver.tests.NavigationTest@315f43d5]" started-at="2026-06-02T13:38:12 CST" name="tearDown" finished-at="2026-06-02T13:38:12 CST" duration-ms="145" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.techexam.webdriver.tests.NavigationTest.TC008_homePageLoadsAfterLogin()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp(java.lang.reflect.Method)[pri:0, instance:com.techexam.webdriver.tests.NavigationTest@315f43d5]" started-at="2026-06-02T13:38:12 CST" name="setUp" finished-at="2026-06-02T13:38:14 CST" duration-ms="1669" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.techexam.webdriver.tests.NavigationTest.TC009_directUrlToLoginWhileLoggedIn()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="TC009_directUrlToLoginWhileLoggedIn()[pri:9, instance:com.techexam.webdriver.tests.NavigationTest@315f43d5]" started-at="2026-06-02T13:38:14 CST" name="TC009_directUrlToLoginWhileLoggedIn" description="TC009: Verify that navigating directly to the login URL while logged in is handled." finished-at="2026-06-02T13:38:15 CST" duration-ms="1390" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC009_directUrlToLoginWhileLoggedIn -->
+        <test-method is-config="true" signature="tearDown(java.lang.reflect.Method)[pri:0, instance:com.techexam.webdriver.tests.NavigationTest@315f43d5]" started-at="2026-06-02T13:38:15 CST" name="tearDown" finished-at="2026-06-02T13:38:15 CST" duration-ms="139" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.techexam.webdriver.tests.NavigationTest.TC009_directUrlToLoginWhileLoggedIn()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp(java.lang.reflect.Method)[pri:0, instance:com.techexam.webdriver.tests.NavigationTest@315f43d5]" started-at="2026-06-02T13:38:15 CST" name="setUp" finished-at="2026-06-02T13:38:18 CST" duration-ms="2137" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.techexam.webdriver.tests.NavigationTest.TC010_pageTitlesAreNotBlank()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="TC010_pageTitlesAreNotBlank()[pri:10, instance:com.techexam.webdriver.tests.NavigationTest@315f43d5]" started-at="2026-06-02T13:38:18 CST" name="TC010_pageTitlesAreNotBlank" description="TC010: Verify that every navigated page has a non-empty page title." finished-at="2026-06-02T13:38:19 CST" duration-ms="1263" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC010_pageTitlesAreNotBlank -->
+        <test-method is-config="true" signature="tearDown(java.lang.reflect.Method)[pri:0, instance:com.techexam.webdriver.tests.NavigationTest@315f43d5]" started-at="2026-06-02T13:38:19 CST" name="tearDown" finished-at="2026-06-02T13:38:19 CST" duration-ms="173" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.techexam.webdriver.tests.NavigationTest.TC010_pageTitlesAreNotBlank()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.techexam.webdriver.tests.NavigationTest -->
+    </test> <!-- Navigation Tests -->
+    <test started-at="2026-06-02T13:38:19 CST" name="Form and Interaction Tests" finished-at="2026-06-02T13:38:25 CST" duration-ms="5484">
+      <class name="com.techexam.webdriver.tests.FormTest">
+        <test-method is-config="true" signature="setUp(java.lang.reflect.Method)[pri:0, instance:com.techexam.webdriver.tests.FormTest@78365cfa]" started-at="2026-06-02T13:38:19 CST" name="setUp" finished-at="2026-06-02T13:38:21 CST" duration-ms="1492" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.techexam.webdriver.tests.FormTest.TC011_userIdInputRetainsValue()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="TC011_userIdInputRetainsValue()[pri:11, instance:com.techexam.webdriver.tests.FormTest@78365cfa]" started-at="2026-06-02T13:38:21 CST" name="TC011_userIdInputRetainsValue" description="TC011: Verify that text typed into Username field is retained." finished-at="2026-06-02T13:38:22 CST" duration-ms="1437" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC011_userIdInputRetainsValue -->
+        <test-method is-config="true" signature="tearDown(java.lang.reflect.Method)[pri:0, instance:com.techexam.webdriver.tests.FormTest@78365cfa]" started-at="2026-06-02T13:38:22 CST" name="tearDown" finished-at="2026-06-02T13:38:22 CST" duration-ms="141" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.techexam.webdriver.tests.FormTest.TC011_userIdInputRetainsValue()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp(java.lang.reflect.Method)[pri:0, instance:com.techexam.webdriver.tests.FormTest@78365cfa]" started-at="2026-06-02T13:38:22 CST" name="setUp" finished-at="2026-06-02T13:38:24 CST" duration-ms="1723" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.techexam.webdriver.tests.FormTest.TC012_invalidUrl()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="TC012_invalidUrl()[pri:12, instance:com.techexam.webdriver.tests.FormTest@78365cfa]" started-at="2026-06-02T13:38:24 CST" name="TC012_invalidUrl" description="TC012: Verify that navigating to a non-existent page shows an error page, not a crash." finished-at="2026-06-02T13:38:24 CST" duration-ms="534" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC012_invalidUrl -->
+        <test-method is-config="true" signature="tearDown(java.lang.reflect.Method)[pri:0, instance:com.techexam.webdriver.tests.FormTest@78365cfa]" started-at="2026-06-02T13:38:24 CST" name="tearDown" finished-at="2026-06-02T13:38:25 CST" duration-ms="149" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.techexam.webdriver.tests.FormTest.TC012_invalidUrl()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.techexam.webdriver.tests.FormTest -->
+    </test> <!-- Form and Interaction Tests -->
+    <test started-at="2026-06-02T13:38:25 CST" name="Edge Case Tests" finished-at="2026-06-02T13:41:50 CST" duration-ms="205097">
+      <class name="com.techexam.webdriver.tests.EdgeCaseTest">
+        <test-method is-config="true" signature="suiteSetUp()[pri:0, instance:com.techexam.webdriver.tests.EdgeCaseTest@736d6a5c]" started-at="2026-06-02T13:37:40 CST" name="suiteSetUp" finished-at="2026-06-02T13:37:40 CST" duration-ms="16" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- suiteSetUp -->
+        <test-method is-config="true" signature="setUp(java.lang.reflect.Method)[pri:0, instance:com.techexam.webdriver.tests.EdgeCaseTest@736d6a5c]" started-at="2026-06-02T13:38:25 CST" name="setUp" finished-at="2026-06-02T13:38:27 CST" duration-ms="1919" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.techexam.webdriver.tests.EdgeCaseTest.EC001_whitespaceOnlyUsername()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="EC001_whitespaceOnlyUsername()[pri:31, instance:com.techexam.webdriver.tests.EdgeCaseTest@736d6a5c]" started-at="2026-06-02T13:38:27 CST" name="EC001_whitespaceOnlyUsername" description="EC001: Whitespace-only username — expects 500 or error, NOT successful login." finished-at="2026-06-02T13:38:48 CST" duration-ms="21451" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- EC001_whitespaceOnlyUsername -->
+        <test-method is-config="true" signature="tearDown(java.lang.reflect.Method)[pri:0, instance:com.techexam.webdriver.tests.EdgeCaseTest@736d6a5c]" started-at="2026-06-02T13:38:48 CST" name="tearDown" finished-at="2026-06-02T13:38:48 CST" duration-ms="170" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.techexam.webdriver.tests.EdgeCaseTest.EC001_whitespaceOnlyUsername()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp(java.lang.reflect.Method)[pri:0, instance:com.techexam.webdriver.tests.EdgeCaseTest@736d6a5c]" started-at="2026-06-02T13:38:48 CST" name="setUp" finished-at="2026-06-02T13:38:50 CST" duration-ms="1316" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.techexam.webdriver.tests.EdgeCaseTest.EC002_whitespaceOnlyPassword()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="EC002_whitespaceOnlyPassword()[pri:32, instance:com.techexam.webdriver.tests.EdgeCaseTest@736d6a5c]" started-at="2026-06-02T13:38:50 CST" name="EC002_whitespaceOnlyPassword" description="EC002: Whitespace-only password" finished-at="2026-06-02T13:39:11 CST" duration-ms="20939" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- EC002_whitespaceOnlyPassword -->
+        <test-method is-config="true" signature="tearDown(java.lang.reflect.Method)[pri:0, instance:com.techexam.webdriver.tests.EdgeCaseTest@736d6a5c]" started-at="2026-06-02T13:39:11 CST" name="tearDown" finished-at="2026-06-02T13:39:11 CST" duration-ms="156" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.techexam.webdriver.tests.EdgeCaseTest.EC002_whitespaceOnlyPassword()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp(java.lang.reflect.Method)[pri:0, instance:com.techexam.webdriver.tests.EdgeCaseTest@736d6a5c]" started-at="2026-06-02T13:39:11 CST" name="setUp" finished-at="2026-06-02T13:39:12 CST" duration-ms="1332" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.techexam.webdriver.tests.EdgeCaseTest.EC003_caseSensitivityUsername()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="EC003_caseSensitivityUsername()[pri:33, instance:com.techexam.webdriver.tests.EdgeCaseTest@736d6a5c]" started-at="2026-06-02T13:39:12 CST" name="EC003_caseSensitivityUsername" description="EC003: Uppercase username." finished-at="2026-06-02T13:39:33 CST" duration-ms="21216" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- EC003_caseSensitivityUsername -->
+        <test-method is-config="true" signature="tearDown(java.lang.reflect.Method)[pri:0, instance:com.techexam.webdriver.tests.EdgeCaseTest@736d6a5c]" started-at="2026-06-02T13:39:33 CST" name="tearDown" finished-at="2026-06-02T13:39:33 CST" duration-ms="207" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.techexam.webdriver.tests.EdgeCaseTest.EC003_caseSensitivityUsername()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp(java.lang.reflect.Method)[pri:0, instance:com.techexam.webdriver.tests.EdgeCaseTest@736d6a5c]" started-at="2026-06-02T13:39:33 CST" name="setUp" finished-at="2026-06-02T13:39:35 CST" duration-ms="1187" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.techexam.webdriver.tests.EdgeCaseTest.EC004_maxLengthUsername()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="EC004_maxLengthUsername()[pri:34, instance:com.techexam.webdriver.tests.EdgeCaseTest@736d6a5c]" started-at="2026-06-02T13:39:35 CST" name="EC004_maxLengthUsername" description="EC004: 500-character username." finished-at="2026-06-02T13:39:56 CST" duration-ms="21412" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- EC004_maxLengthUsername -->
+        <test-method is-config="true" signature="tearDown(java.lang.reflect.Method)[pri:0, instance:com.techexam.webdriver.tests.EdgeCaseTest@736d6a5c]" started-at="2026-06-02T13:39:56 CST" name="tearDown" finished-at="2026-06-02T13:39:56 CST" duration-ms="210" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.techexam.webdriver.tests.EdgeCaseTest.EC004_maxLengthUsername()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp(java.lang.reflect.Method)[pri:0, instance:com.techexam.webdriver.tests.EdgeCaseTest@736d6a5c]" started-at="2026-06-02T13:39:56 CST" name="setUp" finished-at="2026-06-02T13:39:57 CST" duration-ms="1151" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.techexam.webdriver.tests.EdgeCaseTest.EC005_maxLengthPassword()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="EC005_maxLengthPassword()[pri:35, instance:com.techexam.webdriver.tests.EdgeCaseTest@736d6a5c]" started-at="2026-06-02T13:39:57 CST" name="EC005_maxLengthPassword" description="EC005: 1000-character password." finished-at="2026-06-02T13:40:19 CST" duration-ms="21974" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- EC005_maxLengthPassword -->
+        <test-method is-config="true" signature="tearDown(java.lang.reflect.Method)[pri:0, instance:com.techexam.webdriver.tests.EdgeCaseTest@736d6a5c]" started-at="2026-06-02T13:40:19 CST" name="tearDown" finished-at="2026-06-02T13:40:20 CST" duration-ms="200" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.techexam.webdriver.tests.EdgeCaseTest.EC005_maxLengthPassword()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp(java.lang.reflect.Method)[pri:0, instance:com.techexam.webdriver.tests.EdgeCaseTest@736d6a5c]" started-at="2026-06-02T13:40:20 CST" name="setUp" finished-at="2026-06-02T13:40:21 CST" duration-ms="1257" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.techexam.webdriver.tests.EdgeCaseTest.EC006_leadingTrailingSpacesInUsername()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="EC006_leadingTrailingSpacesInUsername()[pri:36, instance:com.techexam.webdriver.tests.EdgeCaseTest@736d6a5c]" started-at="2026-06-02T13:40:21 CST" name="EC006_leadingTrailingSpacesInUsername" description="EC006: Username with leading/trailing spaces." finished-at="2026-06-02T13:40:42 CST" duration-ms="20902" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- EC006_leadingTrailingSpacesInUsername -->
+        <test-method is-config="true" signature="tearDown(java.lang.reflect.Method)[pri:0, instance:com.techexam.webdriver.tests.EdgeCaseTest@736d6a5c]" started-at="2026-06-02T13:40:42 CST" name="tearDown" finished-at="2026-06-02T13:40:42 CST" duration-ms="189" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.techexam.webdriver.tests.EdgeCaseTest.EC006_leadingTrailingSpacesInUsername()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp(java.lang.reflect.Method)[pri:0, instance:com.techexam.webdriver.tests.EdgeCaseTest@736d6a5c]" started-at="2026-06-02T13:40:42 CST" name="setUp" finished-at="2026-06-02T13:40:43 CST" duration-ms="1207" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.techexam.webdriver.tests.EdgeCaseTest.EC007_leadingTrailingValuesInUsername()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="EC007_leadingTrailingValuesInUsername()[pri:37, instance:com.techexam.webdriver.tests.EdgeCaseTest@736d6a5c]" started-at="2026-06-02T13:40:43 CST" name="EC007_leadingTrailingValuesInUsername" description="EC007: Username with leading/trailing values." finished-at="2026-06-02T13:41:47 CST" duration-ms="63861" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- EC007_leadingTrailingValuesInUsername -->
+        <test-method is-config="true" signature="tearDown(java.lang.reflect.Method)[pri:0, instance:com.techexam.webdriver.tests.EdgeCaseTest@736d6a5c]" started-at="2026-06-02T13:41:47 CST" name="tearDown" finished-at="2026-06-02T13:41:47 CST" duration-ms="167" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.techexam.webdriver.tests.EdgeCaseTest.EC007_leadingTrailingValuesInUsername()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp(java.lang.reflect.Method)[pri:0, instance:com.techexam.webdriver.tests.EdgeCaseTest@736d6a5c]" started-at="2026-06-02T13:41:47 CST" name="setUp" finished-at="2026-06-02T13:41:48 CST" duration-ms="1271" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.techexam.webdriver.tests.EdgeCaseTest.EC008_backButtonAfterLogout()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="EC008_backButtonAfterLogout()[pri:38, instance:com.techexam.webdriver.tests.EdgeCaseTest@736d6a5c]" started-at="2026-06-02T13:41:48 CST" name="EC008_backButtonAfterLogout" description="EC008: Browser Back after logout." finished-at="2026-06-02T13:41:50 CST" duration-ms="1201" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- EC008_backButtonAfterLogout -->
+        <test-method is-config="true" signature="tearDown(java.lang.reflect.Method)[pri:0, instance:com.techexam.webdriver.tests.EdgeCaseTest@736d6a5c]" started-at="2026-06-02T13:41:50 CST" name="tearDown" finished-at="2026-06-02T13:41:50 CST" duration-ms="144" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.techexam.webdriver.tests.EdgeCaseTest.EC008_backButtonAfterLogout()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="suiteTearDown()[pri:0, instance:com.techexam.webdriver.tests.EdgeCaseTest@736d6a5c]" started-at="2026-06-02T13:41:50 CST" name="suiteTearDown" finished-at="2026-06-02T13:41:50 CST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- suiteTearDown -->
+      </class> <!-- com.techexam.webdriver.tests.EdgeCaseTest -->
+    </test> <!-- Edge Case Tests -->
+  </suite> <!-- Tech Exam Web Application Test Suite -->
+</testng-results>

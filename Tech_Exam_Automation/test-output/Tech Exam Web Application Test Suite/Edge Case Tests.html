@@ -1,0 +1,120 @@
+<html>
+<head>
+<title>TestNG:  Edge Case Tests</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Edge Case Tests</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>8/0/0</td>
+</tr><tr>
+<td>Started on:</td><td>Tue Jun 02 13:38:25 CST 2026</td>
+</tr>
+<tr><td>Total time:</td><td>205 seconds (205097 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td>edge </td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.techexam.webdriver.tests.EdgeCaseTest.EC006_leadingTrailingSpacesInUsername()'><b>EC006_leadingTrailingSpacesInUsername</b><br>Test class: com.techexam.webdriver.tests.EdgeCaseTest<br>Test method: EC006: Username with leading/trailing spaces.</td>
+<td></td>
+<td>20</td>
+<td>com.techexam.webdriver.tests.EdgeCaseTest@736d6a5c</td></tr>
+<tr>
+<td title='com.techexam.webdriver.tests.EdgeCaseTest.EC002_whitespaceOnlyPassword()'><b>EC002_whitespaceOnlyPassword</b><br>Test class: com.techexam.webdriver.tests.EdgeCaseTest<br>Test method: EC002: Whitespace-only password</td>
+<td></td>
+<td>20</td>
+<td>com.techexam.webdriver.tests.EdgeCaseTest@736d6a5c</td></tr>
+<tr>
+<td title='com.techexam.webdriver.tests.EdgeCaseTest.EC007_leadingTrailingValuesInUsername()'><b>EC007_leadingTrailingValuesInUsername</b><br>Test class: com.techexam.webdriver.tests.EdgeCaseTest<br>Test method: EC007: Username with leading/trailing values.</td>
+<td></td>
+<td>63</td>
+<td>com.techexam.webdriver.tests.EdgeCaseTest@736d6a5c</td></tr>
+<tr>
+<td title='com.techexam.webdriver.tests.EdgeCaseTest.EC008_backButtonAfterLogout()'><b>EC008_backButtonAfterLogout</b><br>Test class: com.techexam.webdriver.tests.EdgeCaseTest<br>Test method: EC008: Browser Back after logout.</td>
+<td></td>
+<td>1</td>
+<td>com.techexam.webdriver.tests.EdgeCaseTest@736d6a5c</td></tr>
+<tr>
+<td title='com.techexam.webdriver.tests.EdgeCaseTest.EC005_maxLengthPassword()'><b>EC005_maxLengthPassword</b><br>Test class: com.techexam.webdriver.tests.EdgeCaseTest<br>Test method: EC005: 1000-character password.</td>
+<td></td>
+<td>21</td>
+<td>com.techexam.webdriver.tests.EdgeCaseTest@736d6a5c</td></tr>
+<tr>
+<td title='com.techexam.webdriver.tests.EdgeCaseTest.EC004_maxLengthUsername()'><b>EC004_maxLengthUsername</b><br>Test class: com.techexam.webdriver.tests.EdgeCaseTest<br>Test method: EC004: 500-character username.</td>
+<td></td>
+<td>21</td>
+<td>com.techexam.webdriver.tests.EdgeCaseTest@736d6a5c</td></tr>
+<tr>
+<td title='com.techexam.webdriver.tests.EdgeCaseTest.EC003_caseSensitivityUsername()'><b>EC003_caseSensitivityUsername</b><br>Test class: com.techexam.webdriver.tests.EdgeCaseTest<br>Test method: EC003: Uppercase username.</td>
+<td></td>
+<td>21</td>
+<td>com.techexam.webdriver.tests.EdgeCaseTest@736d6a5c</td></tr>
+<tr>
+<td title='com.techexam.webdriver.tests.EdgeCaseTest.EC001_whitespaceOnlyUsername()'><b>EC001_whitespaceOnlyUsername</b><br>Test class: com.techexam.webdriver.tests.EdgeCaseTest<br>Test method: EC001: Whitespace-only username — expects 500 or error, NOT successful login.</td>
+<td></td>
+<td>21</td>
+<td>com.techexam.webdriver.tests.EdgeCaseTest@736d6a5c</td></tr>
+</table><p>
+</body>
+</html>

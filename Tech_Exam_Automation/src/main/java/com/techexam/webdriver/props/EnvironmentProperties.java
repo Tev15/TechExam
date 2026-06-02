@@ -5,7 +5,8 @@ import java.text.MessageFormat;
 import java.util.Properties;
 
 /**
- * Custom properties file to store environment configurations and
+ * Custom properties file to store environment configurations and UI Error
+ * Messages
  * 
  * author: steve.estoconing
  */

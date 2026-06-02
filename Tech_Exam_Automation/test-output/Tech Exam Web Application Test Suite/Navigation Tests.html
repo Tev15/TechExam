@@ -1,0 +1,95 @@
+<html>
+<head>
+<title>TestNG:  Navigation Tests</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Navigation Tests</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>3/0/0</td>
+</tr><tr>
+<td>Started on:</td><td>Tue Jun 02 13:38:10 CST 2026</td>
+</tr>
+<tr><td>Total time:</td><td>9 seconds (9414 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td>navigation </td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.techexam.webdriver.tests.NavigationTest.TC008_homePageLoadsAfterLogin()'><b>TC008_homePageLoadsAfterLogin</b><br>Test class: com.techexam.webdriver.tests.NavigationTest<br>Test method: TC008: Verify the home/dashboard page loads and is not blank after login.</td>
+<td></td>
+<td>0</td>
+<td>com.techexam.webdriver.tests.NavigationTest@315f43d5</td></tr>
+<tr>
+<td title='com.techexam.webdriver.tests.NavigationTest.TC010_pageTitlesAreNotBlank()'><b>TC010_pageTitlesAreNotBlank</b><br>Test class: com.techexam.webdriver.tests.NavigationTest<br>Test method: TC010: Verify that every navigated page has a non-empty page title.</td>
+<td></td>
+<td>1</td>
+<td>com.techexam.webdriver.tests.NavigationTest@315f43d5</td></tr>
+<tr>
+<td title='com.techexam.webdriver.tests.NavigationTest.TC009_directUrlToLoginWhileLoggedIn()'><b>TC009_directUrlToLoginWhileLoggedIn</b><br>Test class: com.techexam.webdriver.tests.NavigationTest<br>Test method: TC009: Verify that navigating directly to the login URL while logged in is handled.</td>
+<td></td>
+<td>1</td>
+<td>com.techexam.webdriver.tests.NavigationTest@315f43d5</td></tr>
+</table><p>
+</body>
+</html>
