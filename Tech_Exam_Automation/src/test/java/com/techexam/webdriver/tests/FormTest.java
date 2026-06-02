@@ -2,6 +2,7 @@ package com.techexam.webdriver.tests;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
@@ -46,6 +47,9 @@ public class FormTest extends BaseTest {
 		loginPage.clickLoginButton();
 		
 		WebElement userNameText = driver.findElement(By.id("uid"));
+		
+		//Frequent StaleElement Not Found Error
+		wait.until(ExpectedConditions.visibilityOf(userNameText));
 		
 		String actualValue = userNameText.getAttribute("value");
 

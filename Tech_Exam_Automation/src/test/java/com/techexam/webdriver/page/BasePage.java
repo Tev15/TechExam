@@ -9,6 +9,8 @@ import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
+import com.techexam.webdriver.props.EnvironmentProperties;
+
 /**
  * Base class for all Page Objects containing methods to call
  * 
@@ -23,7 +25,8 @@ public class BasePage {
 	public BasePage(WebDriver webDriver) {
 
 		this.webDriver = webDriver;
-		this.wait = new WebDriverWait(webDriver, Duration.ofSeconds(10));
+		this.wait = new WebDriverWait(webDriver, Duration.ofSeconds(
+				Integer.parseInt(EnvironmentProperties.getInstance().getProperty("webdriver.explicit.wait"))));
 		PageFactory.initElements(webDriver, this);
 	}
 
