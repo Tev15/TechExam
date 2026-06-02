@@ -21,21 +21,10 @@ public class WebDriverRuntimeException extends RuntimeException {
 		this.code = code;
 	}
 
-	public WebDriverRuntimeException(Code code, Throwable cause) {
-		super(code.getCode(), cause);
-		this.code = code.getCode();
-	}
-
 	/** String code with no cause (configuration / validation errors). */
 	public WebDriverRuntimeException(String code) {
 		super(code);
 		this.code = code;
-	}
-
-	/** Enum Code with no cause. */
-	public WebDriverRuntimeException(Code code) {
-		super(code.getCode());
-		this.code = code.getCode();
 	}
 
 	public String getCode() {
@@ -48,7 +37,7 @@ public class WebDriverRuntimeException extends RuntimeException {
 		sb.append(super.toString()).append(",Code:").append(code);
 		return sb.toString();
 	}
-	
+
 	@Override
 	public boolean equals(Object other) {
 		if (getClass().equals(other.getClass())) {

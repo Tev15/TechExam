@@ -1,15 +1,11 @@
-package com.techexam.page;
+package com.techexam.webdriver.page;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
-import com.techexam.utils.LoginResult;
-import com.techexam.webdriver.BasePage;
-
 /**
  * Page Object for the Login page.
- *
  *
  * @author steve.estoconing
  */
@@ -52,43 +48,42 @@ public class LoginPage extends BasePage {
 	 * @param password plain-text password
 	 * @return this LoginPage (for method chaining / login failure assertion)
 	 */
-	public LoginResult login(String username, String password) {
-		return enterUserName(username).enterPassword(password).clickLogin();
+	public LoginPage login(String username, String password) {
+		return enterUserName(username).enterPassword(password).clickLoginButton();
 	}
 
 	/** Types the username without submitting. */
 	public LoginPage enterUserName(String userName) {
-		type(ssoUserNameText, true);
+		type(ssoUserNameText, userName);
 		return this;
 	}
 
 	/** Types the password without submitting. */
 	public LoginPage enterPassword(String password) {
-		type(ssoPasswordText, true);
+		type(ssoPasswordText, password);
 		return this;
 	}
 
 	/** Clicks the login / submit button. */
-	public LoginResult clickLogin() {
+	public LoginPage clickLoginButton() {
 		click(loginButton);
-
-		if (isElementPresent(logoutButton)) {
-			return LoginResult.success(new HomePage(webDriver));
-		} else if (isElementPresent(errorLoginMessage)) {
-			return LoginResult.failure(this);
-		} else {
-			throw new IllegalStateException("Unknown login outcome");
-		}
+		return this;
+	}
+	
+	public boolean isErrorMessageDisplayed() {
+		return isElementPresent(errorLoginMessage);
 	}
 
+	/** Verifies Error Message shown after failed login attempt */
 	public String verifyErrorMessage() {
 
-		if (errorLoginMessage.isDisplayed()) {
+		if (isErrorMessageDisplayed()) {
 			return errorLoginMessage.getText(); // Update checking
 		}
 		return "";
 	}
 
+	/** Verifies Login Page is displayed */
 	public boolean isLoginPageDisplayed() {
 		return isElementPresent(ssoUserNameText) && isElementPresent(ssoPasswordText);
 	}

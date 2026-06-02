@@ -10,8 +10,9 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.firefox.FirefoxOptions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
-import com.techexam.props.EnvironmentProperties;
+import com.techexam.webdriver.props.EnvironmentProperties;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 
@@ -29,13 +30,6 @@ public class WebDriverComponent {
 
 	private static ThreadLocal<WebDriverComponent> driver = new ThreadLocal<>();
 
-	// ------------------------------------------------------------------
-	// Configurable timeouts (seconds) — set before createInstance()
-	// ------------------------------------------------------------------
-	private static long implicitWaitSeconds = 10;
-	private static long pageLoadTimeoutSeconds = 30;
-	private static long explicitWaitSeconds = 15;
-
 	private WebDriver webDriver;
 
 	// private constructor — use createInstance()
@@ -46,7 +40,9 @@ public class WebDriverComponent {
 	public static WebDriverComponent createInstance(String browserName) {
 
 		EnvironmentProperties envProps = EnvironmentProperties.getInstance();
-		logger.info("Initializing Selenium WebDriver. Browser: {}", browserName);
+
+		int implicitWait = Integer.parseInt(envProps.getProperty("webdriver.implicit.wait"));
+		int pageLoadTimeout = Integer.parseInt(envProps.getProperty("webdriver.page.load.timeout"));
 		WebDriver browserDriver;
 
 		try {
@@ -77,8 +73,8 @@ public class WebDriverComponent {
 
 		// Apply timeouts
 		browserDriver.manage().window().maximize();
-		browserDriver.manage().timeouts().implicitlyWait(Duration.ofSeconds(implicitWaitSeconds));
-		browserDriver.manage().timeouts().pageLoadTimeout(Duration.ofSeconds(pageLoadTimeoutSeconds));
+		browserDriver.manage().timeouts().implicitlyWait(Duration.ofSeconds(implicitWait));
+		browserDriver.manage().timeouts().pageLoadTimeout(Duration.ofSeconds(pageLoadTimeout));
 
 		WebDriverComponent component = new WebDriverComponent(browserDriver);
 		driver.set(component);
@@ -86,35 +82,49 @@ public class WebDriverComponent {
 		logger.info("WebDriver initialized successfully.");
 		return component;
 	}
-	
-	/**
-     * Returns the WebDriverComponent for the current thread.
-     * Returns {@code null} if no driver has been created yet.
-     */
-    public static WebDriverComponent getInstance() {
-        return driver.get();
-    }
 
-    /** Returns the raw WebDriver. */
-    public WebDriver getWebDriver() {
-        return webDriver;
-    }
-    
-    /**
-     * Quits the WebDriver and removes the ThreadLocal entry.
-     * Mirrors reference {@code WebDriverComponent.getInstance().clear()}.
-     */
-    public void clear() {
-        if (webDriver != null) {
-            try {
-                logger.info("Closing WebDriver instance.");
-                webDriver.quit();
-            } catch (Exception ex) {
-                logger.warn("WebDriver quit encountered an issue: {}", ex.getMessage());
-            } finally {
-                webDriver = null;
-                driver.remove();
-            }
-        }
-    }
+	/**
+	 * Returns the WebDriverComponent for the current thread. Returns {@code null}
+	 * if no driver has been created yet.
+	 */
+	public static WebDriverComponent getInstance() {
+		return driver.get();
+	}
+
+	/** Returns the raw WebDriver. */
+	public WebDriver getWebDriver() {
+		return webDriver;
+	}
+
+	/** Returns an explicit wait using the default {@code explicitWaitSeconds}. */
+	public WebDriverWait getWait() {
+		return getWait(Integer.parseInt(EnvironmentProperties.getInstance().getProperty("webdriver.explicit.wait")));
+	}
+
+	/**
+	 * Creates a pre-configured {@link WebDriverWait} for the current driver.
+	 *
+	 * @param timeoutSeconds custom wait timeout
+	 */
+	public WebDriverWait getWait(long timeoutSeconds) {
+		return new WebDriverWait(webDriver, Duration.ofSeconds(timeoutSeconds));
+	}
+
+	/**
+	 * Quits the WebDriver and removes the ThreadLocal entry. Mirrors reference
+	 * {@code WebDriverComponent.getInstance().clear()}.
+	 */
+	public void clear() {
+		if (webDriver != null) {
+			try {
+				logger.info("Closing WebDriver instance.");
+				webDriver.quit();
+			} catch (Exception ex) {
+				logger.warn("WebDriver quit encountered an issue: {}", ex.getMessage());
+			} finally {
+				webDriver = null;
+				driver.remove();
+			}
+		}
+	}
 }

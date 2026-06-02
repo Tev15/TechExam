@@ -1,4 +1,4 @@
-package com.techexam.webdriver;
+package com.techexam.webdriver.page;
 
 import java.time.Duration;
 
@@ -67,30 +67,18 @@ public class BasePage {
 	 * @param text        text to put in {@link WebElement}
 	 */
 	protected void type(WebElement element, boolean clearBefore, CharSequence... text) {
-		type(element, clearBefore, false, text);
-	}
-
-	/**
-	 * Provides text input to a {@link WebElement}, preferably text fields.
-	 * 
-	 * @param webElement  {@link WebElement} to put text into
-	 * @param clearBefore clears the {@link WebElement} of any pre-displayed value
-	 * @param clickBefore clicks the {@link WebElement} before text input, use this
-	 *                    only if text input doesn't work due to focus issues
-	 * @param text        text to put in {@link WebElement}
-	 */
-	protected void type(WebElement element, boolean clearBefore, boolean clickBefore, CharSequence... text) {
 		if (clearBefore) {
 			element.clear();
-		}
-
-		if (clickBefore) {
-			element.click();
 		}
 
 		element.sendKeys(text);
 	}
 
+	/**
+	 * Returns true if {@link WebElement} is visible, otherwise false.
+	 * 
+	 * @param webElement {@link WebElement} to check if visible or not
+	 */
 	public boolean isElementPresent(WebElement element) {
 		try {
 			wait.until(ExpectedConditions.visibilityOf(element));
@@ -99,4 +87,5 @@ public class BasePage {
 			return false;
 		}
 	}
+
 }

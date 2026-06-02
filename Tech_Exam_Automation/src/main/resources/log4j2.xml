@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration status="WARN">
+
+    <Appenders>
+
+        <!-- Console: coloured output mimicking the reference tool's logger style -->
+        <Console name="Console" target="SYSTEM_OUT">
+            <PatternLayout pattern="%d{yyyy-MM-dd HH:mm:ss} [%-5level] %logger{36} - %msg%n"/>
+        </Console>
+
+        <!-- Rolling file: one log per day, keeps the last 30 days -->
+        <RollingFile name="File"
+                     fileName="test-output/logs/automation.log"
+                     filePattern="test-output/logs/automation-%d{yyyy-MM-dd}.log">
+            <PatternLayout pattern="%d{yyyy-MM-dd HH:mm:ss} [%-5level] %logger{36} - %msg%n"/>
+            <Policies>
+                <TimeBasedTriggeringPolicy interval="1" modulate="true"/>
+                <SizeBasedTriggeringPolicy size="10 MB"/>
+            </Policies>
+            <DefaultRolloverStrategy max="30"/>
+        </RollingFile>
+
+    </Appenders>
+
+    <Loggers>
+
+        <!-- Root: INFO to both Console and File -->
+        <Root level="INFO">
+            <AppenderRef ref="Console"/>
+            <AppenderRef ref="File"/>
+        </Root>
+
+        <!-- Framework-specific: DEBUG for detailed Selenium/WebDriver messages -->
+        <Logger name="com.techexam.webdriver" level="DEBUG" additivity="false">
+            <AppenderRef ref="Console"/>
+            <AppenderRef ref="File"/>
+        </Logger>
+
+        <!-- Suppress noisy third-party loggers -->
+        <Logger name="org.openqa.selenium"        level="WARN"  additivity="false">
+            <AppenderRef ref="File"/>
+        </Logger>
+        <Logger name="io.github.bonigarcia"       level="WARN"  additivity="false">
+            <AppenderRef ref="Console"/>
+        </Logger>
+        <Logger name="com.aventstack"             level="WARN"  additivity="false">
+            <AppenderRef ref="File"/>
+        </Logger>
+
+    </Loggers>
+
+</Configuration>
